@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.btn{
+   min-width:100%;
+   margin: 30px 0;
+}
+
+.btn button{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    border: none;
+    background-color: rgb(55, 55, 239);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: sprit 2s ease-in-out infinite ;
+    cursor: pointer;
+}
+
+@keyframes sprit {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: rgb(112, 212, 30);
+    }
+
+    75%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: aquamarine;
+    }
+
+
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(167, 38, 103);
+    padding: 20px 20px;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+#imga{
+    width: 50px;
+    opacity: 0.6;
+    height: 50px;
+    display: block;
+    margin:10px auto;
+    border-radius: 50%;
+    animation: send 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes send {
+    0%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 0.9;
+    }
+
+}
+.sox{
+   visibility: visible;
+}
+
+.box h4{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+.box p{
+    text-align: center;
+    color: white;
+}
+
+.tox {
+    min-width: 100%;
+    margin: 20px 0;
+
+}
+.tox img{
+    width: 120px;
+    height: auto;
+    border-radius:10px;
+    border: 3px solid crimson;
+    display: block;
+    margin: 20px auto;
+}
